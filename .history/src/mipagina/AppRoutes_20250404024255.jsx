@@ -16,8 +16,7 @@ export default function AppRoutes () {
     return (
         <Routes>
             {/* Ruta para la página de inicio */}
-            <Route path='/' element={<PageHome/>} />
-            {/* Ruta para la página de inicio (otra forma de definirla) */}
+            
             <Route path='/home' element={<PageHome/>} />
             {/* Rutas para las páginas "Acerca de" y "Contacto" */}
             <Route path='/about' element={<PageAbout/>} />
