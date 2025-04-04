@@ -1,0 +1,97 @@
+h3 {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* Fondo de la página */
+.contact-background {
+    background: linear-gradient(to right, #e0c3fc, #8ec5fc); /* Gradiente suave */
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Contenedor del formulario */
+.contact-container {
+    background: #f5f5f5; /* Fondo blanco con transparencia */
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Efecto difuso en el fondo */
+    position: relative;
+}
+
+/* Título principal */
+.contact-title {
+    font-size: 3rem;
+    color: #070707; /* Color vibrante similar al púrpura */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Descripción */
+.contact-description {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 30px;
+    font-style: italic; /* Estilo cursivo para un toque artístico */
+}
+
+/* Campos del formulario */
+.contact-field {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-field:focus {
+    box-shadow: 0 0 12px rgba(118, 130, 199, 0.8); /* Sombra más fuerte al enfocar */
+}
+
+/* Botón de enviar */
+.contact-submit-btn {
+    background-color: #ff4081; /* Rosa brillante para el botón */
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el botón */
+}
+
+.contact-submit-btn:hover {
+    background-color: #202de0; /* Color más oscuro en hover */
+}
+
+/* Mensajes de éxito */
+.success-message {
+    margin-top: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-description {
+        font-size: 1rem;
+    }
+}

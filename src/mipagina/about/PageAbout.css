@@ -1,0 +1,133 @@
+/* Estilo general */
+.portfolio-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+/* Sección de perfil */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #1cd4e5;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 500px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+/* Sección de habilidades */
+.skills-title {
+  font-family: Verdana;
+  font-size: 2rem;
+  color: #fffafa;
+  margin-bottom: 20px;
+}
+
+.skill-card {
+  background-color: #A7A199;
+  border: 2px solid #63f2ff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px #63f2ff;
+}
+
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Sección de contacto */
+.contact-title {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* Fondo de la página */
+.background {
+  background-color: #A7A199;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+@media (max-width: 600px) {
+  .portfolio-container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

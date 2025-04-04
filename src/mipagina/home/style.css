@@ -1,0 +1,109 @@
+/* Aseguramos que el div que contiene la imagen ocupe toda la pantalla */
+.page-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  width: 100vw;  /* Ocupa todo el ancho de la ventana */
+  background-image: url('https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover; /* La imagen cubre toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+  position: relative;
+  filter: brightness(95%); /* Oscurecer ligeramente la imagen para mejor contraste */
+}
+
+/* Capa de superposición para mejorar la legibilidad del texto */
+.page-home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Fondo oscuro semitransparente */
+  z-index: -1; /* Aseguramos que la capa esté detrás del contenido */
+}
+
+/* Estilo para el contenedor de texto */
+.page-home-content {
+  text-align: center;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  background: #ffffff15; /* Fondo blanco semitransparente con opacidad baja */
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.4); /* Sombra suave y moderna */
+  border: 0px solid #ffffff11; /* Borde sutil */
+  max-width: 80%; /* Limitar el tamaño del contenedor */
+}
+
+/* Estilos del título */
+.page-home-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #F5F5DC; /* Naranja brillante para llamar la atención */
+  letter-spacing: 2px; /* Espaciado entre letras para un toque futurista */
+  text-transform: uppercase; /* Mayúsculas para darle más protagonismo */
+  text-shadow: 2px 6px 6px rgba(0, 0, 0, 0.6); /* Sombra en el texto para resaltar */
+}
+
+/* Estilo del párrafo */
+.page-home-content p {
+  font-size: 1.2rem;
+  color: #fafbe0; /* Blanco brillante para buen contraste */
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Estilos del botón */
+/* From Uiverse.io by joe-watson-sbf */ 
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #E9E9D1;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #fff;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #E9E9D1;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
